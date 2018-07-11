@@ -143,3 +143,5 @@ document.querySelectorAll(".rotateButton").forEach(element => {
     };
 
 }});
+
+const moveElement = document.querySelector(".move");
