@@ -51,3 +51,15 @@ body {
   top: -437px;
   z-index: 0;
 }
+
+.legMiddle1 {
+  transform: rotateX(30deg) rotateY(135deg) rotateZ(0deg);
+  left: calc(593px + ((100% - 1193px) / 2));
+  top: -509px;
+}
+
+.legMiddle2 {
+  transform: rotateX(-30deg) rotateY(135deg) rotateZ(0deg);
+  left: calc(576px + ((100% - 1193px) / 2));
+  top: -710px;
+}
