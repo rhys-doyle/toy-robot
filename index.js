@@ -72,3 +72,10 @@ document.querySelectorAll('.xValue').forEach(element => {
     event.target.classList.add('xActive');
   }
 });
+
+document.querySelectorAll('.yValue').forEach(element => {
+  element.onclick = event => {
+    document.querySelector('.yActive').classList.remove('yActive');
+    event.target.classList.add('yActive');
+  }
+});
