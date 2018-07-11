@@ -75,3 +75,7 @@ body {
   left: calc(912px + ((100% - 1193px) / 2));
   top: -1277px;
 }
+
+.robotBox img {
+  width: 100%;
+}
