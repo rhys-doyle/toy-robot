@@ -22,3 +22,9 @@ const place = ({x, y, f}) => {
     };
   }
 };
+
+const inputCheck = input => {
+  if (input.x === undefined || input.y === undefined || input.f === undefined) {
+    throw new Error("Input is undefined");
+  }
+};
