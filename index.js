@@ -79,3 +79,10 @@ document.querySelectorAll('.yValue').forEach(element => {
     event.target.classList.add('yActive');
   }
 });
+
+document.querySelectorAll('.directionValue').forEach(element => {
+  element.onclick = event => {
+    document.querySelector('.directionActive').classList.remove('directionActive');
+    event.target.classList.add('directionActive');
+  }
+});
