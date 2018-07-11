@@ -3,3 +3,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.table {
+  width: 500px;
+  height: 500px;
+  background-image: url("/resources/table-background.jpg");
+  margin: 0 auto;
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+  position: relative;
+}
