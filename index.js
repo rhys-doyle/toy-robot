@@ -153,3 +153,17 @@ moveElement.onclick = () => {
   };
 
 const reportLocation = document.querySelector(".report");
+
+let clicker = 0;
+
+reportLocation.onclick = () => {
+  inputCheck(_location);
+  report(_location);
+    if (clicker < 1) {
+      document.querySelector('.reported').style.opacity = 0.8;
+      clicker = clicker + 1;
+    } else {
+      document.querySelector('.reported').style.opacity = 0;
+      clicker = 0;
+    }
+};
