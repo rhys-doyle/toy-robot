@@ -106,3 +106,10 @@ placeElement.onclick = () => {
       _location.f = 3;
   }
   _location = place(_location);
+  document.querySelector('.robotBox').style.left = leftValues[_location.x];
+  document.querySelector('.robotBox').style.top = topValues[_location.y];
+  document.querySelector('.robotBox').style.transform = `rotate(${orientation[_location.f]}deg)`;
+  currentAngle = orientation[_location.f];
+  document.querySelector('.robotBox').style.opacity = 0.9;
+
+};
