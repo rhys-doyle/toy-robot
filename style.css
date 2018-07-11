@@ -176,3 +176,18 @@ strong {
   text-decoration: underline;
   cursor: default;
 }
+
+.reported {
+  position: relative;
+  z-index: 100;
+  left: 37.6%;
+  color: white;
+  top: -177.4%;
+  font-size: 0.7rem;
+  padding: 10px 20px;
+  background-color: rgba(100, 149, 237, 0.4);
+  border-radius: 10px;
+  transition: all ease-in-out 1s;
+  max-width: 275px;
+  opacity: 0;
+}
