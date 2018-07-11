@@ -31,3 +31,10 @@ body {
   left: calc(524px + ((100% - 1193px) / 2));
   top: -1403px;
 }
+
+.tableLeg {
+  width: 24px;
+  height: 200px;
+  position: relative;
+  background-image: url("/resources/table-background.jpg");
+}
