@@ -79,3 +79,10 @@ body {
 .robotBox img {
   width: 100%;
 }
+
+.robotBox {
+  width: 20%;
+  position: absolute;
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
