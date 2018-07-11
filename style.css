@@ -86,3 +86,13 @@ body {
   opacity: 0;
   transition: all ease-in-out 1s;
 }
+
+.buttonsAndInputs {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 1rem 0 0 0;
+  max-width: 55rem;
+  margin: 0 auto;
+  flex-direction: column;
+}
