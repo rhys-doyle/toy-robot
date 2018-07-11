@@ -38,3 +38,16 @@ body {
   position: relative;
   background-image: url("/resources/table-background.jpg");
 }
+
+.legLeft1 {
+  transform: rotateX(-30deg) rotateY(136deg) rotateZ(0deg);
+  left: calc(239px + ((100% - 1193px) / 2));
+  top: -238px;
+}
+
+.legLeft2 {
+  transform: rotateX(30deg) rotateY(135deg) rotateZ(0deg);
+  left: calc(256px + ((100% - 1193px) / 2));
+  top: -437px;
+  z-index: 0;
+}
