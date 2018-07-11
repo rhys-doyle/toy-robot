@@ -60,3 +60,8 @@ const move = input => {
     return output;
   }
 };
+
+const report = input => {
+  let output = input;
+  document.querySelector('.reported').textContent = `The toy robot is facing ${compass[output.f]} at position x = ${(output.x) + 1} and y = ${(output.y) + 1}.`;
+}
