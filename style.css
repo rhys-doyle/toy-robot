@@ -110,3 +110,69 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
+
+h1 {
+  font-size: 6rem;
+  color: rgba(100, 149, 237, 0.8);
+  padding: 1rem 0 0 0;
+  text-align: center;
+}
+
+.placeBox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inputBoxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonsBox {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0 0 0;
+}
+
+.x,
+.y,
+.direction {
+  padding: 3px 20px;
+  font-size: 0.6rem;
+  cursor: default;
+}
+
+.inputBoxes span {
+  padding: 5px 0 0 0;
+  display: block;
+  text-align: left;
+}
+
+strong {
+  font-size: 0.6rem;
+  color: white;
+}
+
+.place {
+  font-size: 2.2rem;
+}
+
+.xValue,
+.yValue {
+  padding: 0 0 0 3rem;
+  cursor: pointer;
+}
+
+.directionValue {
+  padding: 0 0 0 2rem;
+  cursor: pointer;
+}
+
+.xActive,
+.yActive,
+.directionActive {
+  color: midnightblue;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: default;
+}
