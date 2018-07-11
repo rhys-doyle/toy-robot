@@ -86,3 +86,23 @@ document.querySelectorAll('.directionValue').forEach(element => {
     event.target.classList.add('directionActive');
   }
 });
+
+const placeElement = document.querySelector('.place');
+
+placeElement.onclick = () => {
+  _location.x = parseInt(document.querySelector(".xActive").textContent, 10) - 1;
+  _location.y = parseInt(document.querySelector(".yActive").textContent, 10) - 1;
+  switch (document.querySelector('.directionActive').textContent) {
+    case 'North':
+      _location.f = 0;
+      break;
+    case 'East':
+      _location.f = 1;
+      break;
+    case 'South':
+      _location.f = 2;
+      break;
+    case 'West':
+      _location.f = 3;
+  }
+  _location = place(_location);
