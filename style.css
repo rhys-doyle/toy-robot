@@ -63,3 +63,15 @@ body {
   left: calc(576px + ((100% - 1193px) / 2));
   top: -710px;
 }
+
+.legRight1 {
+  transform: rotateX(30deg) rotateY(135deg) rotateZ(0deg);
+  left: calc(929px + ((100% - 1193px) / 2));
+  top: -1077px;
+}
+
+.legRight2 {
+  transform: rotateX(-30deg) rotateY(135deg) rotateZ(0deg);
+  left: calc(912px + ((100% - 1193px) / 2));
+  top: -1277px;
+}
