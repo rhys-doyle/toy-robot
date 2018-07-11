@@ -145,3 +145,9 @@ document.querySelectorAll(".rotateButton").forEach(element => {
 }});
 
 const moveElement = document.querySelector(".move");
+
+moveElement.onclick = () => {
+    _location = move(_location);
+    document.querySelector('.robotBox').style.left = leftValues[_location.x];
+    document.querySelector('.robotBox').style.top = topValues[_location.y];
+  };
