@@ -151,3 +151,5 @@ moveElement.onclick = () => {
     document.querySelector('.robotBox').style.left = leftValues[_location.x];
     document.querySelector('.robotBox').style.top = topValues[_location.y];
   };
+
+const reportLocation = document.querySelector(".report");
