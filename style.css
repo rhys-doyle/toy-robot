@@ -11,3 +11,23 @@ body {
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
   position: relative;
 }
+
+.sideLeft {
+  width: 409px;
+  height: 40px;
+  background-image: url(/resources/table-background.jpg);
+  transform: rotateX(120deg) rotateY(30deg) rotateZ(0deg);
+  position: relative;
+  top: -571px;
+  left: calc(215px + ((100% - 1193px) / 2));
+}
+
+.sideRight {
+  width: 499px;
+  height: 24px;
+  background-image: url(/resources/table-background.jpg);
+  transform: rotateX(30deg) rotateY(135deg) rotateZ(0deg);
+  position: relative;
+  left: calc(524px + ((100% - 1193px) / 2));
+  top: -1403px;
+}
