@@ -113,3 +113,33 @@ placeElement.onclick = () => {
   document.querySelector('.robotBox').style.opacity = 0.9;
 
 };
+
+document.querySelectorAll(".rotateButton").forEach(element => {
+  element.onclick = event => {
+    inputCheck(_location)
+    let whichWay = event.target.textContent;
+    switch (whichWay) {
+      case 'Left':
+        document.querySelector('.robotBox').style.transform = `rotate(${currentAngle - 90}deg)`;
+        currentAngle = currentAngle - 90;
+        break;
+      case 'Right':
+        document.querySelector('.robotBox').style.transform = `rotate(${currentAngle + 90}deg)`;
+        currentAngle = currentAngle + 90;
+    };
+
+    switch (currentAngle % 360) {
+      case 180 || -180:
+        _location.f = 0;
+        break;
+      case 270 || -90:
+        _location.f = 1;
+        break;
+      case 0:
+        _location.f = 2;
+        break;
+      case 90 || -270:
+        _location.f = 3;
+    };
+
+}});
