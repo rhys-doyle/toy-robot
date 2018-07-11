@@ -65,3 +65,10 @@ const report = input => {
   let output = input;
   document.querySelector('.reported').textContent = `The toy robot is facing ${compass[output.f]} at position x = ${(output.x) + 1} and y = ${(output.y) + 1}.`;
 }
+
+document.querySelectorAll('.xValue').forEach(element => {
+  element.onclick = event => {
+    document.querySelector('.xActive').classList.remove('xActive');
+    event.target.classList.add('xActive');
+  }
+});
